@@ -10,7 +10,7 @@ if [ ! -d "$dir/../node_modules" ]; then
 fi
 
 if [ $# -eq 1 ] && [ "$1" = "--help" ]; then
-    echo 'Lint the markdown file'
+    echo 'Lint the shell script file'
     echo ''
     echo "Usage:    $bin FILE [FILE]"
     echo "Example:  $bin README.md"
@@ -33,4 +33,4 @@ if [ $# -lt 1 ]; then
 fi
 
 # shellcheck disable=SC2086
-$dir/../node_modules/.bin/markdownlint -c $dir/../config/markdownlint.json "$@"
+$dir/../node_modules/.bin/shellcheck "$@"

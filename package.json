@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "A repository to help you build your own IDE.",
   "dependencies": {
-    "markdownlint-cli": "^0.27.1"
+    "markdownlint-cli": "^0.27.1",
+    "shellcheck": "^1.0.0"
   }
 }
