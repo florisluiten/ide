@@ -36,6 +36,7 @@ IDE.
 
 - https://github.com/BurntSushi/ripgrep
 - https://www.jocas.lt/blog/post/intro-to-lucene-grep/
+- https://til.simonwillison.net/bash/finding-bom-csv-files-with-ripgrep
 
 ## Static analysis
 
