@@ -24,6 +24,7 @@ command line and their tools.
 
 - https://git-scm.com/docs/git-worktree
 - https://git-scm.com/docs/git-bisect
+- https://github.com/git/git/blob/da6abf5d9c342a74dffbcc2015b9c27d7819a900/README#L248
 
 ## Package managers
 
