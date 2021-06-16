@@ -15,10 +15,11 @@ command line and their tools.
 - https://mhoffman.github.io/2015/05/21/how-to-navigate-directories-with-the-shell.html
 - https://prithu.dev/posts/unix-pipeline/
 - https://seb.jambor.dev/posts/cd-is-not-a-program/
+- https://seb.jambor.dev/posts/performance-optimizations-for-the-shell-prompt/
+- https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s06-greenberg.pdf
 - https://thorsten-hans.com/5-types-of-zsh-aliases
 - https://vermaden.wordpress.com/ghost-in-the-shell/
 - https://www.reddit.com/r/unix/comments/6gxduc/how_is_gnu_yes_so_fast/
-- https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s06-greenberg.pdf
 
 ## Git
 
