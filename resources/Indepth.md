@@ -21,11 +21,21 @@ command line and their tools.
 - https://vermaden.wordpress.com/ghost-in-the-shell/
 - https://www.reddit.com/r/unix/comments/6gxduc/how_is_gnu_yes_so_fast/
 
+## Bash
+
+- https://timvisee.com/blog/elegant-bash-conditionals/
+
 ## Git
 
-- https://git-scm.com/docs/git-worktree
 - https://git-scm.com/docs/git-bisect
+- https://git-scm.com/docs/git-worktree
+- https://github.com/GumTreeDiff/gumtree
 - https://github.com/git/git/blob/da6abf5d9c342a74dffbcc2015b9c27d7819a900/README#L248
+- https://www.moxio.com/blog/43/ignoring-bulk-change-commits-with-git-blame
+
+## Regular expression tools
+
+- https://learnbyexample.github.io/gnu-bre-ere-cheatsheet/
 
 ## Package managers
 
@@ -53,6 +63,10 @@ command line and their tools.
 - https://project-awesome.org/git-tips/tips
 - https://project-awesome.org/k4m4/terminals-are-sexy
 - https://project-awesome.org/stevemao/awesome-git-addons
+
+## Debugging
+
+- https://pragmaticpineapple.com/7-ways-to-debug-jest-tests-in-terminal/
 
 ## Others
 
