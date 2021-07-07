@@ -17,7 +17,7 @@ IDE.
 - https://gist.github.com/wlib/093f8b8f670016813073a4c4f8b28e81
 - https://github.com/akavel/up
 - https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md
-- https://github.com/ellie/atuin - atuin - "Magical" shell history
+- https://github.com/ellie/atuin
 - https://github.com/mptre/yank
 - https://muhammadraza.me/2021/Oneliners/
 - https://www.shellcheck.net/
@@ -50,6 +50,11 @@ IDE.
 ## Documentation
 
 - https://www.doxygen.nl/index.html
+
+## Processors
+
+- https://github.com/ericchiang/pup
+- https://stedolan.github.io/jq/
 
 ## File management
 
