@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+set -eu
+
+dir=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
+
+if [ ! -d "$dir/../vendor" ]; then
+    echo 'Missing vendor, please run "composer install" and try again'
+    exit 2
+fi
+
+if [ $# -eq 0 ]; then
+	$dir/../vendor/bin/phpunit -c $dir/../phpunit.xml test/
+
+	exit $?
+fi
+
+for testfile in "$@"; do
+	$dir/../vendor/bin/phpunit -c $dir/../phpunit.xml -- "$testfile"
+done

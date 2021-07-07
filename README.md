@@ -18,6 +18,10 @@ IDE in order to work effectively in this codebase. This can be seen as
 
 Configuration files for the provided tools.
 
+### exampleproject/
+
+An project setup using some of the guides I mentioned in my talk.
+
 ### resources/
 
 A collection of different resources. Each resource lists various articles,

@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+set -eu
+
+dir=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
+
+exitcode="0"
+
+if [ $# -eq 0 ]; then
+	$dir/test-php || exitcode=1
+	$dir/test-js || exitcode=1
+
+	exit $exitcode
+fi
+
+for file in "$@"; do
+	case $file in
+		*.php)
+			$dir/test-php $($dir/get-test-file $file) || exitcode=1
+			;;
+		*.js)
+			$dir/test-js $($dir/get-test-file $file) || exitcode=1
+			;;
+		*)
+			echo "Unable to run test for '$file'"
+			exitcode=1
+			;;
+	esac
+done
+
+exit $exitcode

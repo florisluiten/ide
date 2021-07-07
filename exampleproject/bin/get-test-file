@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+
+set -eu
+
+dir=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
+
+cd $dir/..
+
+for file in "$@"; do
+	case $file in
+		test/*)
+			echo $file
+			;;
+		*.php)
+			relativeFile=$(echo "$file" | sed -e 's@^src/@@')
+
+			unitTestFilename=$(echo $relativeFile | sed -e 's@.php$@Test.php@')
+			integrationTestFilename=$(echo $relativeFile | sed -e 's@.php$@IntegrationTest.php@')
+
+			if [ -f "test/unit/$unitTestFilename" ]; then
+				echo "test/unit/$unitTestFilename"
+			fi
+
+			if [ -f "test/integration/$integrationTestFilename" ]; then
+				echo "test/integration/$integrationTestFilename"
+			fi
+			;;
+		*.js)
+			relativeFile=$(echo "$file")
+
+			unitTestFilename=$(echo $relativeFile | sed -e 's@.js$@.test.js@')
+
+			if [ -f "test/js/$unitTestFilename" ]; then
+				echo "test/js/$unitTestFilename"
+			fi
+			;;
+		*)
+			echo "Unknown file '$file'"
+			exit 2
+	esac
+done

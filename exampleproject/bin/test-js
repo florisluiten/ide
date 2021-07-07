@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+set -eu
+
+dir=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
+
+if [ ! -d "$dir/../node_modules" ]; then
+    echo 'Missing node_modules, please run "npm ci" and try again'
+    exit 2
+fi
+
+$dir/../node_modules/.bin/jest "$@"
