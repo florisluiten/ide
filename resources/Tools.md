@@ -27,9 +27,11 @@ IDE.
 
 - https://bhupesh.gitbook.io/notes/git/how-to-undo-anything-in-git
 - https://cli.github.com/
+- https://github.com/MarkForged/GOMP
 - https://github.com/arzzen/git-quick-stats
 - https://github.com/banga/git-split-diffs
 - https://github.com/chriswalz/bit
+- https://github.com/dandavison/delta
 - https://github.com/gruntwork-io/git-xargs
 
 ## Grep
@@ -55,6 +57,7 @@ IDE.
 
 - https://github.com/ericchiang/pup
 - https://stedolan.github.io/jq/
+- https://www.stefaanlippens.net/pretty-csv.html
 
 ## File management
 

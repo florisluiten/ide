@@ -19,6 +19,7 @@ command line and their tools.
 - https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s06-greenberg.pdf
 - https://thorsten-hans.com/5-types-of-zsh-aliases
 - https://vermaden.wordpress.com/ghost-in-the-shell/
+- https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/
 - https://www.reddit.com/r/unix/comments/6gxduc/how_is_gnu_yes_so_fast/
 
 ## Bash
