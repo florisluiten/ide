@@ -78,3 +78,4 @@ command line and their tools.
 - https://microsoft.github.io/language-server-protocol/specifications/specification-current/
 - https://web.eecs.utk.edu/~azh/blog/informationforaging.html
 - https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/
+- https://www.thestrangeloop.com/2018/tree-sitter---a-new-parsing-system-for-programming-tools.html
