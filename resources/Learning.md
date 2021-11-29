@@ -9,3 +9,7 @@ A collection of tools, platforms and games that help you learn (new) stuff.
 ## git
 
 * https://ohmygit.org/
+
+## Inspirational
+
+* http://jacobzelko.com/workflow/
