@@ -1,0 +1,36 @@
+#!/usr/bin/env sh
+set -eu
+
+dir=$(CDPATH="" cd -- "$(dirname -- "$0")" && pwd)
+bin=$(basename -- "$0")
+
+if [ ! -d "$dir/../node_modules" ]; then
+    echo 'Missing dependencies, please run "npm ci" and try again'
+    exit 2
+fi
+
+if [ $# -eq 1 ] && [ "$1" = "--help" ]; then
+    echo 'Lint all files. Should be used in a git pre-commit-hook'
+    echo ''
+    echo "Usage:    $bin FILE [FILE]"
+    echo "Example:  $bin README.md"
+    echo ''
+    echo 'Options:'
+    echo '  -h, --help         This help'
+    echo ''
+    echo 'Argument:'
+    echo '  file  When specifying file, only linrun that test'
+    echo ''
+    echo 'Exit status is 0 if the script ran succesfully'
+    echo ''
+    echo 'Report bugs to devsummit21@florisluiten.nl'
+    exit 0
+fi
+
+if [ $# -lt 1 ]; then
+    echo 'Please pass at least one parameter'
+    exit 2
+fi
+
+# shellcheck disable=SC2086
+$dir/../node_modules/.bin/markdownlint -c $dir/../config/markdownlint.json "$@"
